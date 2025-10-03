@@ -2,7 +2,7 @@ module.exports.config = {
   name: "leave",
   eventType: ["log:unsubscribe"],
   version: "1.0.0",
-  credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+  credits: "Nobita Chat Bot",
   description: "Thông báo bot hoặc người rời khỏi nhóm",
   dependencies: {
     "fs-extra": "",
@@ -21,8 +21,8 @@ module.exports.run = async function({ api, event, Users, Threads }) {
   const name = global.data.userName.get(event.logMessageData.leftParticipantFbId) || await Users.getNameUser(event.logMessageData.leftParticipantFbId);
 
   const type = (event.author == event.logMessageData.leftParticipantFbId)
-    ? " তোর সাহস কম না  গ্রুপের এডমিনের পারমিশন ছাড়া তুই লিভ  নিস😡😠🤬 \n✦─────꯭─⃝‌‌𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭────✦"
-    : "তোমার এই গ্রুপে থাকার কোনো যোগ্যাতা নেই ছাগল😡\nতাই তোমাকে লাথি মেরে গ্রুপ থেকে বের করে দেওয়া হলো🤪 WELLCOME REMOVE🤧\n✦─────꯭─⃝‌‌𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭────✦";
+    ? " তোর সাহস তো কম না গ্রুপের এডমিনের পারমিশন ছাড়া তুই লিফট নিছিস 🤬 \n✦─꯭─⃝‌‌𝐍𝐎𝐁𝐈𝐓𝐀 𝐂𝐇𝐀𝐓 𝐁𝐎𝐓──✦"
+    : "তোর এই গ্রুপে থাকার কোনো যোগ্যতা নেই ছাগল😡\nতাই তোকে লাথি মেরে গ্রুপ থেকে বের করে দেওয়া হলো🧃🔪 WELLCOME REMOVE🤧\n✦───⃝‌‌𝐍𝐎𝐁𝐈𝐓𝐀 𝐂𝐇𝐀𝐓 𝐁𝐎𝐓───✦";
 
   const path = join(__dirname, "Shahadat", "leaveGif");
   const gifPath = join(path, `leave1.gif`);
@@ -30,7 +30,7 @@ module.exports.run = async function({ api, event, Users, Threads }) {
   if (!existsSync(path)) mkdirSync(path, { recursive: true });
 
   let msg = (typeof data.customLeave == "undefined")
-    ? "ইস {name} {type} "
+    ? "ইস🫂{name} {type}🫂"
     : data.customLeave;
 
   msg = msg.replace(/\{name}/g, name).replace(/\{type}/g, type);
