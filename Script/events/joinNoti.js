@@ -2,7 +2,7 @@ module.exports.config = {
   name: "joinnoti",
   eventType: ["log:subscribe"],
   version: "1.0.2",
-  credits: "𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐈𝐬𝐥𝐚𝐦",
+  credits: "Nobita Chat Bot",
   description: "Welcome message with optional image/video",
   dependencies: {
     "fs-extra": "",
@@ -34,7 +34,7 @@ module.exports.run = async function({ api, event }) {
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     await api.changeNickname(`[ ${botPrefix} ] • ${botName}`, threadID, api.getCurrentUserID());
 
-    api.sendMessage("চ্ঁলে্ঁ এ্ঁসে্ঁছি্ঁ 𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 এঁখঁনঁ তোঁমাঁদেঁরঁ সাঁথেঁ আঁড্ডাঁ দিঁবঁ..!", threadID, () => {
+    api.sendMessage("চলে এসেছি আমি নবিতা রোবট তোমাদের সাথে আড্ডা দিতে...🤖🔥", threadID, () => {
       const randomGifPath = path.join(__dirname, "cache", "randomgif");
       const allFiles = fs.readdirSync(randomGifPath).filter(file =>
         [".mp4", ".jpg", ".png", ".jpeg", ".gif", ".mp3"].some(ext => file.endsWith(ext))
@@ -48,20 +48,22 @@ module.exports.run = async function({ api, event }) {
      আ্ঁস্ঁসা্ঁলা্ঁমু্ঁ💚আ্ঁলা্ঁই্ঁকু্ঁম্ঁ
 ╰•┄┅═══❁🌺❁═══┅┄•╯
 
-𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐬𝐨 𝐦𝐮𝐜𝐡 𝐟𝐨𝐫 𝐚𝐝𝐝𝐢𝐧𝐠 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐢-𝐠𝐫𝐨𝐮𝐩-🖤🤗
-𝐈 𝐰𝐢𝐥𝐥 𝐚𝐥𝐰𝐚𝐲𝐬 𝐬𝐞𝐫𝐯𝐞 𝐲𝐨𝐮 𝐢𝐧𝐚𝐡𝐚𝐥𝐥𝐚𝐡 🌺❤️
+𝐓𝐡𝐚𝐧𝐤 𝐘𝐨𝐮 𝐒𝐨 𝐌𝐮𝐜𝐡 𝐅𝐨𝐫 𝐀𝐝𝐝𝐢𝐧𝐠 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 🔥
+            𝐈 𝐖𝐢𝐥𝐥 𝐀𝐥𝐰𝐚𝐲𝐬 𝐒𝐚𝐟𝐞 𝐲𝐨𝐮 𝐢𝐧𝐬𝐡𝐚𝐥𝐥𝐚𝐡 🌺❤️
 
-𝐓𝐨 𝐯𝐢𝐞𝐰 𝐚𝐧𝐲 𝐜𝐨𝐦𝐦𝐚𝐧𝐝:
+𝐓𝐎 𝐕𝐈𝐄𝐖 𝐀𝐍𝐘 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 ⬇️
 ${botPrefix}Help
 ${botPrefix}Info
 ${botPrefix}Admin
 
-★ যেকোনো অভিযোগ অথবা হেল্প এর জন্য এডমিন 𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 কে নক করতে পারেন ★
-➤𝐌𝐞𝐬𝐬𝐞𝐧𝐠𝐞𝐫: https://m.me/100001039692046
-➤𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩: https://wa.me/100001039692046
-
-❖⋆═══════════════════════⋆❖
-          𝐁𝐨𝐭 𝐎𝐰𝐧𝐞𝐫 ➢ 𝐒𝐇𝐀𝐇𝐀𝐃𝐀𝐓 𝐒𝐀𝐇𝐔`;
+★ যেকোনো অভিযোগ অথবা হেল্প এর জন্য এডমিন নবিতাকে নক করতে পারেন ★
+   
+      𝐁𝐎𝐓 𝐎𝐍𝐖𝐄𝐑 : 𝐍𝐎𝐁𝐈𝐓𝐀 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘
+        
+ ➤𝐌𝐞𝐬𝐬𝐞𝐧𝐠𝐞𝐫: https://m.me/DEATH.USER1
+➤𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩: https://wa.me/ +8801941010189
+    
+❖⋆═════════════⋆❖`;
 
       if (selected) {
         api.sendMessage({ body: messageBody, attachment: selected }, threadID);
@@ -102,16 +104,16 @@ ${botPrefix}Admin
 ➤ গ্রুপ এডমিনের কথা শুনবেন ও রুলস মেনে চলবেন।✅
 
 ›› প্রিয় {name},  
-আপনি এই গ্রুপের {soThanhVien} নম্বর মেম্বার!
+আপনি এই গ্রুপের {soThanhVien} নাম্বার মেম্বার!⚡
 
 ›› গ্রুপ: {threadName}
 
 💌 🌺 𝐖 𝐄 𝐋 𝐂 𝐎 𝐌 𝐄 🌺 💌
 ╭─╼╾─╼🌸╾─╼╾───╮
-   ─꯭─⃝‌‌𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 🌺
+─꯭─⃝‌‌𝐍𝐎𝐁𝐈𝐓𝐀 𝐂𝐇𝐀𝐓 𝐁𝐎𝐓🌺
 ╰───╼╾─╼🌸╾─╼╾─╯
 
-❖⋆══════════════════════════⋆❖` : threadData.customJoin;
+❖⋆═════════════⋆❖` : threadData.customJoin;
 
     msg = msg
       .replace(/\{name}/g, nameArray.join(', '))
