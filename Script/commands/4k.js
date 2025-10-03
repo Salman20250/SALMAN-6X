@@ -8,7 +8,7 @@ module.exports = {
  name: "4k",
  version: "1.0.0",
  hasPermssion: 0,
- credits: "—͟͟͞͞𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️ ",
+ credits: "NOBITA CHAT BOT",
  premium: false,
  description: "Enhance Photo - Image Generator",
  commandCategory: "Image Editing Tools",
@@ -29,12 +29,12 @@ module.exports = {
  args.join(' ');
 
  if (!imageUrl) {
- api.sendMessage("Please reply to an image or provide an image URL", threadID, messageID);
+ api.sendMessage("ᴘʟᴇᴀsᴇ ʀᴇᴘʟʏ ᴏʀ ᴀɴ ɪᴍᴀɢᴇ ᴘʀᴏᴠɪᴅᴇ ᴀɴ ɪᴍᴀɢᴇ ᴜʀʟ💫", threadID, messageID);
  return;
  }
 
  try {
- const processingMsg = await api.sendMessage("𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 𝐁𝐚𝐛𝐲...😘", threadID);
+ const processingMsg = await api.sendMessage("𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐁𝐀𝐁𝐘...🧃⚡", threadID);
 
  const apiUrl = `https://aryan-xyz-upscale-api-phi.vercel.app/api/upscale-image?imageUrl=${encodeURIComponent(imageUrl)}&apikey=${xyz}`;
 
@@ -42,7 +42,7 @@ module.exports = {
  const enhancedImageUrl = enhancementResponse.data?.resultImageUrl;
 
  if (!enhancedImageUrl) {
- throw new Error("Failed to get enhanced image URL.");
+ throw new Error("ғᴀɪʟᴇᴅ ᴛᴏ ɢᴇᴛ ᴇɴʜᴀɴᴄᴇᴅ ɪᴍᴀɢᴇ ᴜʀʟ💥");
  }
 
  const enhancedImage = (await axios.get(enhancedImageUrl, { responseType: 'arraybuffer' })).data;
@@ -50,7 +50,7 @@ module.exports = {
  fs.writeFileSync(tempImagePath, Buffer.from(enhancedImage, 'binary'));
 
  api.sendMessage({
- body: "✅ 𝐈𝐦𝐚𝐠𝐞 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲!",
+ body: "𝐈𝐦𝐚𝐠𝐞 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐃𝐨𝐧𝐞✅🔥",
  attachment: fs.createReadStream(tempImagePath)
  }, threadID, () => fs.unlinkSync(tempImagePath), messageID);
 
