@@ -20,8 +20,8 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
                 api.changeAdminStatus(event.threadID, event.author, false, editAdminsCallback)
                 api.changeAdminStatus(event.threadID, logMessageData.TARGET_ID, false)
                 function editAdminsCallback(err) {
-                  if (err) return api.sendMessage("Che!! stupid. 😝", event.threadID, event.messageID);
-                    return api.sendMessage(`» Activate anti-robbery box 🖤 mode`, event.threadID, event.messageID);
+                  if (err) return api.sendMessage("𝐂𝐡𝐞 𝐒𝐭𝐮𝐩𝐢𝐝..😝", event.threadID, event.messageID);
+                    return api.sendMessage(`» 𝐀𝐜𝐭𝐢𝐯𝐞 𝐀𝐧𝐭𝐢 - 𝐑𝐨𝐛𝐛𝐞𝐫𝐲 𝐁𝐨𝐱 𝐌𝐨𝐝𝐞✅`, event.threadID, event.messageID);
                 }
               }
             }
@@ -32,8 +32,8 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
                 api.changeAdminStatus(event.threadID, event.author, false, editAdminsCallback)
                 api.changeAdminStatus(event.threadID, logMessageData.TARGET_ID, true)
                 function editAdminsCallback(err) {
-                if (err) return api.sendMessage("Che!! Stupid 😝", event.threadID, event.messageID);
-                return api.sendMessage(`» Activate anti-robbery box 🖤 mode`, event.threadID, event.messageID);
+                if (err) return api.sendMessage("𝐂𝐡𝐞 𝐒𝐭𝐮𝐩𝐢𝐝..😝", event.threadID, event.messageID);
+                return api.sendMessage(`» 𝐀𝐜𝐭𝐢𝐯𝐞 𝐀𝐧𝐭𝐢 - 𝐑𝐨𝐛𝐛𝐞𝐫𝐲 𝐁𝐨𝐱 𝐌𝐨𝐝𝐞✅`, event.threadID, event.messageID);
               }
             }
           }
