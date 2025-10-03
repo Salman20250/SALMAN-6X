@@ -2,7 +2,7 @@ module.exports.config = {
   name: "prefix",
   version: "1.0.0", 
   hasPermssion: 0,
-  credits: "Shahadat SAHU",
+  credits: "NOBITA CHAT BOT",
   description: "Display the bot's prefix and owner info",
   commandCategory: "Information",
   usages: "",
@@ -31,29 +31,29 @@ module.exports.handleEvent = async ({ event, api, Threads }) => {
   if (triggerWords.includes(lowerBody)) {
     return api.sendMessage(
 `🌟━━━━━━━━━━━━━━━━━🌟
-　　　『 𝐏𝐑𝐄𝐅𝐈𝐗 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 』
+　『 𝐏𝐑𝐄𝐅𝐈𝐗 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 』
 🌟━━━━━━━━━━━━━━━━━🌟
 『 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 』
 
-➤ 𝗕𝗼𝘁 𝗽𝗿𝗲𝗳𝗶𝘅 : [ ${prefix} ]
-➤ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲   : ─꯭─⃝‌‌𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐓
-➤ 𝗕𝗼𝘁 𝗔𝗱𝗺𝗶𝗻 : 𝐒𝐇𝐀𝐇𝐀𝐃𝐀𝐓
+➤ 𝗕𝗢𝗧 𝗣𝗥𝗘𝗙𝗜𝗫 : [ ${prefix} ]
+➤ 𝗕𝗢𝗧 𝗡𝗔𝗠𝗘 : ─꯭─⃝‌‌𝐍𝐎𝐁𝐈𝐓𝐀 𝐂𝐇𝐀𝐓 𝐁𝐎𝐓
+➤ 𝗕𝗢𝗧 𝗔𝗗𝗠𝗜𝗡 : 𝐒𝐀𝐋𝐌𝐀𝐍 𝐀𝐇𝐌𝐄𝐃
 
 『 𝐁𝐎𝐗 𝐈𝐍𝐅𝐎 』
 
-➤ 𝗕𝗼𝘅 𝗣𝗿𝗲𝗳𝗶𝘅 : ${prefix}
-➤ 𝗕𝗼𝘅 𝗡𝗮𝗺𝗲   : ${groupName}
-➤ 𝗕𝗼𝘅 𝗧𝗜𝗗     : ${threadID}
+➤ 𝗕𝗢𝗫 𝗣𝗥𝗘𝗙𝗜𝗫 : ${prefix}
+➤ 𝗕𝗢𝗫 𝗡𝗔𝗠𝗘 : ${groupName}
+➤ 𝗕𝗢𝗫 𝗨𝗜𝗗 : ${threadID}
 
 『 𝐎𝐖𝐍𝐄𝐑 𝐈𝐍𝐅𝐎 』
 
-➤ 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : 𝐒𝐇𝐀𝐇𝐀𝐃𝐀𝐓 𝐒𝐀𝐇𝐔
-➤ 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸    : www.facebook.com/100001039692046
-➤ 𝗠𝗲𝘀𝘀𝗲𝗻𝗴𝗲𝗿  : m.me/100001039692046
-➤ 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽    : https://wa.me/+8801882333052
+➤ 𝗢𝗪𝗡𝗘𝗥 𝗡𝗔𝗠𝗘 : 𝐍𝐎𝐁𝐈𝐓𝐀 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘
+➤ 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞     : https://www.facebook.com/DEATH.USER1
+➤ 𝗠𝗘𝗦𝗦𝗘𝗡𝗚𝗘𝗥  : https://m.me/DEATH.USER1
+➤ 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣     : https://wa.me/+8801941010189
 
 🌟━━━━━━━━━━━━━━━━━🌟
-　　　　𝗧𝗵𝗮𝗻𝗸 𝗬𝗼𝘂 𝗙𝗼𝗿 𝗨𝘀𝗶𝗻𝗴!
+　　𝗧𝗛𝗔𝗡𝗞 𝗬𝗢𝗨 𝗨𝗦𝗜𝗡𝗚..💖
 🌟━━━━━━━━━━━━━━━━━🌟`,
       threadID,
       null
@@ -62,5 +62,5 @@ module.exports.handleEvent = async ({ event, api, Threads }) => {
 };
 
 module.exports.run = async ({ event, api }) => {
-  return api.sendMessage("Type 'prefix' or similar to get the bot info.", event.threadID);
+  return api.sendMessage("𝐓𝐲𝐩𝐞 '𝐏𝐫𝐞𝐟𝐢𝐱' 𝐎𝐫 𝐒𝐢𝐦𝐢𝐥𝐨𝐫 𝐓𝐨 𝐆𝐞𝐭 𝐓𝐡𝐞 𝐁𝐨𝐭 𝐈𝐧𝐟𝐨.", event.threadID);
 };
