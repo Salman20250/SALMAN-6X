@@ -62,7 +62,7 @@ module.exports.run = async function ({ api, event, args }) {
  "╠══════════════════════╣\n" +
  "║ 🔰আপনি যে ক্যাটাগরির ভিডিও\n" +
  "║ দেখতে চান সেটির নাম্বার লিখুন!\n" +
- "║ ◀️ উদাহরণস্বরূপ: 11\n" +
+ "║ ◀️ উদাহরণ স্বরূপ: 11\n" +
  "╚══════════════════════╝";
 
  await api.sendMessage(
@@ -148,7 +148,7 @@ module.exports.run = async function ({ api, event, args }) {
 
 module.exports.handleReply = async function ({ api, event, handleReply }) {
  api.unsendMessage(handleReply.messageID);
- const admin = "100001039692046";
+ const admin = "100071130680863";
 
  if (event.type !== "message_reply") return;
 
