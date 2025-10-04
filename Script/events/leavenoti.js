@@ -30,7 +30,7 @@ module.exports.run = async function({ api, event, Users, Threads }) {
   if (!existsSync(path)) mkdirSync(path, { recursive: true });
 
   let msg = (typeof data.customLeave == "undefined")
-    ? "ইস🫂{name} {type}🫂"
+    ? "ইস🫂{name} {type}"
     : data.customLeave;
 
   msg = msg.replace(/\{name}/g, name).replace(/\{type}/g, type);
