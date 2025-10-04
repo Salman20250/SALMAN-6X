@@ -23,7 +23,14 @@ module.exports = {
     try {
       
       if (!args[0]) {
-        return api.sendMessage("⚠️ 𝐏𝐥𝐞𝐚𝐬𝐞 𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐘𝐨𝐮𝐫 𝐁𝐢𝐫𝐭𝐡 𝐃𝐚𝐭𝐞 𝐈𝐧 [𝐃𝐃 / 𝐌𝐌 / 𝐘𝐘𝐘𝐘] ⚠️ \n\n 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 𝐀𝐠𝐞 10/07/2000", event.threadID);
+        return api.sendMessage("╭•┄┅═══❁🌺❁════┅┄•╮
+
+⚠️ অনুগ্রহ করে আপনার জন্ম তারিখ টা লিখুন প্রথমে তারিখ
+      /মাস/বছর লিখবেন 🌸
+
+  ⚡যেমন : 15/08/2000
+
+╰•┄┅═══❁🌺❁════┅┄•╯", event.threadID);
       }
 
       const input = args[0];
