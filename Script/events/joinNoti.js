@@ -64,6 +64,7 @@ module.exports.run = async function({ api, event }) {
    🔥𝗕𝗢𝗧 𝗢𝗪𝗡𝗥 : 𝗡𝗢𝗕𝗜𝗧𝗔🔥
         
 ➤𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 : DEATH.USER1
+        ⚡⚠️⬇️
 ➤𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏  : 01941010189
     
 ❖⋆═════════════⋆❖`;
