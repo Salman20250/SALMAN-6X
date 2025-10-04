@@ -55,7 +55,7 @@ module.exports.run = async function({ api, event }) {
 ⚡𝗩𝗜𝗘𝗪 𝗔𝗡𝗬 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ⬇️
 
   ╭•┄┅═══❁🌺❁═══┅┄•╮
-    টাইপ করুন ${botPrefix} সকল 
+    টাইপ করুন ${botPrefix}Help সকল 
       কমান্ড দেখতে পারবেন ✅
   ╰•┄┅═══❁🌺❁═══┅┄•╯
 
