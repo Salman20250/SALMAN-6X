@@ -64,10 +64,10 @@ module.exports.run = async function ({ api, event, args, Users, Threads }) {
      ❤️ 𝗧𝗛𝗔𝗡𝗞𝗦 𝗙𝗢𝗥 𝗨𝗦𝗜𝗡𝗚 𝗠𝗬 𝗕𝗢𝗧 🌺`;
 
  const imgLinks = [
- "https://imgur.com/a/YVUjWxK",
- "https://imgur.com/a/3fDST5S",
- "https://imgur.com/a/qBLmHLP",
- "https://imgur.com/a/UIVoAya"
+ "https://i.imgur.com/DLkU4zv.jpeg",
+ "https://i.imgur.com/WdQrEsX.jpeg",
+ "https://i.imgur.com/kJZSmfg.jpeg",
+ "https://i.imgur.com/sogvsow.jpeg"
  ];
 
  const imgLink = imgLinks[Math.floor(Math.random() * imgLinks.length)];
