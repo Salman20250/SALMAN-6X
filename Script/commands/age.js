@@ -23,14 +23,14 @@ module.exports = {
     try {
       
       if (!args[0]) {
-        return api.sendMessage("╭•┄┅═══❁🌺❁════┅┄•╮
+        return api.sendMessage(`╭•┄┅═══❁🌺❁════┅┄•╮
 
 ⚠️ অনুগ্রহ করে আপনার জন্ম তারিখ টা লিখুন প্রথমে তারিখ
       /মাস/বছর লিখবেন 🌸
 
   ⚡যেমন : 15/08/2000
 
-╰•┄┅═══❁🌺❁════┅┄•╯", event.threadID);
+╰•┄┅═══❁🌺❁════┅┄•`;, event.threadID);
       }
 
       const input = args[0];
