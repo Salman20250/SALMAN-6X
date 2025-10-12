@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "adduser",
 	version: "2.4.3",
 	hasPermssion: 0,
-	credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+	credits: "NOBITA CHAT BOT",
 	description: "Add user to the group by link or id",
 	commandCategory: "group",
 	usages: "[args]",
@@ -19,13 +19,13 @@ module.exports.run = async function ({ api, event, args }) {
 	const out = msg => api.sendMessage(msg, threadID, messageID);
 	var { participantIDs, approvalMode, adminIDs } = await api.getThreadInfo(threadID);
 	var participantIDs = participantIDs.map(e => parseInt(e));
-	if (!args[0]) return out("Please enter 1 id/link profile user need to add.");
+	if (!args[0]) return out("𝐏𝐥𝐞𝐚𝐬𝐞 𝐄𝐧𝐭𝐞𝐫 1 𝐈𝐃/𝐋𝐢𝐧𝐤 𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐔𝐬𝐞𝐫 𝐍𝐞𝐞𝐝 𝐓𝐨 𝐀𝐝𝐝.⚠️");
 	if (!isNaN(args[0])) return adduser(args[0], undefined);
 	else {
 		try {
 			var [id, name, fail] = await getUID(args[0], api);
 			if (fail == true && id != null) return out(id);
-			else if (fail == true && id == null) return out("User ID not found.")
+			else if (fail == true && id == null) return out("𝐔𝐬𝐞𝐫 𝐈𝐃 𝐍𝐨𝐭 𝐅𝐨𝐮𝐧𝐝..♻️")
 			else {
 				await adduser(id, name || "Facebook user");
 			}
