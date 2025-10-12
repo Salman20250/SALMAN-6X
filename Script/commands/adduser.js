@@ -19,7 +19,7 @@ module.exports.run = async function ({ api, event, args }) {
 	const out = msg => api.sendMessage(msg, threadID, messageID);
 	var { participantIDs, approvalMode, adminIDs } = await api.getThreadInfo(threadID);
 	var participantIDs = participantIDs.map(e => parseInt(e));
-	if (!args[0]) return out("𝐏𝐥𝐞𝐚𝐬𝐞 𝐄𝐧𝐭𝐞𝐫 1 𝐈𝐃/𝐋𝐢𝐧𝐤 𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐔𝐬𝐞𝐫 𝐍𝐞𝐞𝐝 𝐓𝐨 𝐀𝐝𝐝.⚠️");
+	if (!args[0]) return out("𝐏𝐥𝐞𝐚𝐬𝐞 𝐄𝐧𝐭𝐞𝐫 1 𝐈𝐃/𝐋𝐢𝐧𝐤 𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐔𝐬𝐞𝐫 𝐍𝐞𝐞𝐝 𝐓𝐨 𝐀𝐝𝐝 ❤️🔥");
 	if (!isNaN(args[0])) return adduser(args[0], undefined);
 	else {
 		try {
@@ -36,7 +36,7 @@ module.exports.run = async function ({ api, event, args }) {
 
 	async function adduser(id, name) {
 		id = parseInt(id);
-		if (participantIDs.includes(id)) return out(`${name ? name : "Member"} are already in the group.`);
+		if (participantIDs.includes(id)) return out(`${name ? name : "𝐌𝐞𝐦𝐛𝐞𝐫"} 𝐀𝐫𝐞 𝐀𝐥𝐫𝐞𝐚𝐝𝐲 𝐈𝐧 𝐓𝐡𝐞 𝐆𝐫𝐨𝐮𝐩...🌸`);
 		else {
 			var admins = adminIDs.map(e => parseInt(e.id));
 			try {
