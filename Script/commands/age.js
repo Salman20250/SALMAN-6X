@@ -2,7 +2,7 @@ module.exports = {
   config: {
     name: "age",
     version: "2.1",
-    author: "—͟͟͞͞𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+    author: "—͟͟͞͞NOBITA CHAT BOT",
     hasPermission: 0,
     commandCategory: "utility",
     cooldowns: 5,
@@ -23,7 +23,7 @@ module.exports = {
     try {
       
       if (!args[0]) {
-        return api.sendMessage("⚠️ Please provide your birth date in DD/MM/YYYY format\nExample: age 16/12/2006", event.threadID);
+        return api.sendMessage("⚠️ 𝐏𝐥𝐞𝐚𝐬𝐞 𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐘𝐨𝐮𝐫 𝐁𝐢𝐫𝐭𝐡 𝐃𝐚𝐭𝐞 𝐈𝐧 [𝐃𝐃 / 𝐌𝐌 / 𝐘𝐘𝐘𝐘 ] \n𝐄𝐱𝐚𝐦𝐩𝐥𝐞 𝐀𝐠𝐞 10/07/2000", event.threadID);
       }
 
       const input = args[0];
