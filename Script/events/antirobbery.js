@@ -2,7 +2,7 @@ module.exports.config = {
     name: "guard",
     eventType: ["log:thread-admins"],
     version: "1.0.0",
-    credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+    credits: "NOBITA CHAT BOT",
     description: "Prevent admin changes",
 };
 
@@ -20,8 +20,8 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
                 api.changeAdminStatus(event.threadID, event.author, false, editAdminsCallback)
                 api.changeAdminStatus(event.threadID, logMessageData.TARGET_ID, false)
                 function editAdminsCallback(err) {
-                  if (err) return api.sendMessage("Che!! stupid. 😝", event.threadID, event.messageID);
-                    return api.sendMessage(`» Activate anti-robbery box 🖤 mode`, event.threadID, event.messageID);
+                  if (err) return api.sendMessage("𝐂𝐡𝐞 𝐒𝐭𝐮𝐩𝐢𝐝..😝", event.threadID, event.messageID);
+                    return api.sendMessage(`» ᴀᴄᴛɪᴠᴀᴛᴇ ᴀɴᴛɪ ʀᴏʙʙᴇʀʏ ʙᴏx ᴍᴏᴅᴇ 💫💚`, event.threadID, event.messageID);
                 }
               }
             }
@@ -32,8 +32,8 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
                 api.changeAdminStatus(event.threadID, event.author, false, editAdminsCallback)
                 api.changeAdminStatus(event.threadID, logMessageData.TARGET_ID, true)
                 function editAdminsCallback(err) {
-                if (err) return api.sendMessage("Che!! Stupid 😝", event.threadID, event.messageID);
-                return api.sendMessage(`» Activate anti-robbery box 🖤 mode`, event.threadID, event.messageID);
+                if (err) return api.sendMessage("𝐂𝐡𝐞 𝐒𝐭𝐮𝐩𝐢𝐝..😝", event.threadID, event.messageID);
+                return api.sendMessage(`» ᴀᴄᴛɪᴠᴀᴛᴇ ᴀɴᴛɪ ʀᴏʙʙᴇʀʏ ʙᴏx ᴍᴏᴅᴇ 💫💚`, event.threadID, event.messageID);
               }
             }
           }
