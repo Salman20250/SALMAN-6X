@@ -2,7 +2,7 @@ module.exports.config = {
 name: "adminUpdate",
 eventType: ["log:thread-admins","log:thread-name", "log:user-nickname","log:thread-icon","log:thread-call","log:thread-color"],
 version: "1.0.1",
-credits: "𝗜𝘀𝗹𝗮𝗺𝗶𝗰𝗸 𝗰𝗵𝗮𝘁 𝗯𝗼𝘁",
+credits: "NOBITA CHAT BOT",
 description: "Update team information quickly",
 envConfig: {
 sendNoti: true,
@@ -25,7 +25,7 @@ try {
         case "log:thread-admins": {  
             if (logMessageData.ADMIN_EVENT == "add_admin") {  
                 dataThread.adminIDs.push({ id: logMessageData.TARGET_ID })  
-                if (global.configModule[this.config.name].sendNoti) api.sendMessage(`»» NOTICE «« Update user ${logMessageData.TARGET_ID}  Admin Power Activate! 🧙‍♂️🔮\n অফিসিয়ালি এখন তুই VIP 😎🎩`, threadID, async (error, info) => {  
+                if (global.configModule[this.config.name].sendNoti) api.sendMessage(`»» NOTICE «« Update user ${logMessageData.TARGET_ID}  𝐀𝐝𝐦𝐢𝐧 𝐏𝐨𝐰𝐞𝐫 𝐀𝐜𝐭𝐢𝐯𝐚𝐭𝐞 🧙‍♂️🔮\n অফিসিয়ালি এখন তুই 𝐕𝐈𝐏 😎🎩`, threadID, async (error, info) => {  
                     if (global.configModule[this.config.name].autoUnsend) {  
                         await new Promise(resolve => setTimeout(resolve, global.configModule[this.config.name].timeToUnsend * 1000));  
                         return api.unsendMessage(info.messageID);  
@@ -34,7 +34,7 @@ try {
             }  
             else if (logMessageData.ADMIN_EVENT == "remove_admin") {  
                 dataThread.adminIDs = dataThread.adminIDs.filter(item => item.id != logMessageData.TARGET_ID);  
-                if (global.configModule[this.config.name].sendNoti) api.sendMessage(`»» NOTICE «« Update user ${logMessageData.TARGET_ID} বেশি চুল পাকনামি করার কারণে🥴 তোকে এডমিন থেকে\n  লাথি মেরে  বের করে দেওয়া হল 😀😂`, threadID, async (error, info) => {  
+                if (global.configModule[this.config.name].sendNoti) api.sendMessage(`»» NOTICE «« Update user ${logMessageData.TARGET_ID} বেশি পাকনামি করার কারণে তোকে এডমিন থেকে\n  লাথি মেরে  বের করে দেওয়া হলো🧃👀`, threadID, async (error, info) => {  
                     if (global.configModule[this.config.name].autoUnsend) {  
                         await new Promise(resolve => setTimeout(resolve, global.configModule[this.config.name].timeToUnsend * 1000));  
                         return api.unsendMessage(info.messageID);  
