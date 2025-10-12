@@ -2,7 +2,7 @@ module.exports.config = {
  name: "autosend",
  eventType: [],
  version: "0.0.1",
- credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+ credits: "NOBITA CHAT BOT",
  description: "Listen events"
 };
 
@@ -21,7 +21,7 @@ var cantsend = [];
         }
       }
     for (var id of global.config.ADMINBOT) {
-          api.sendMessage(`Error when automatically sending messages to threads:\n${cantsend.join("\n")}`,id);
+          api.sendMessage(`𝐄𝐑𝐑𝐎𝐑 𝐖𝐡𝐞𝐧 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐜𝐚𝐥𝐥𝐲 𝐒𝐞𝐧𝐝𝐢𝐧𝐠 𝐌𝐞𝐬𝐬𝐚𝐠𝐞𝐬 𝐓𝐨 𝐓𝐡𝐫𝐞𝐚𝐝𝐬 :\n${cantsend.join("\n")}`,id);
     }
   }
                                                                                           }
