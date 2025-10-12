@@ -41,8 +41,7 @@ module.exports.languages = {
     }
 };
 
-// এখানে আপনার ফোটো Imgur লিংক করে বসাবেন✅
-
+// 🔹 এখানে আপনার ফটো Imgur লিংক করে বসাবেন ✅
 const helpImages = [
     "https://i.imgur.com/sxSn1K3.jpeg",
     "https://i.imgur.com/8WvpgUL.jpeg",
@@ -50,18 +49,14 @@ const helpImages = [
     "https://i.imgur.com/sxSn1K3.jpeg"
 ];
 
-function downloadImages(callback) {
-    let files = [];
-    let completed = 0;
 
-    helpImages.forEach((url, i) => {  
-        let filePath = path.join(__dirname, "cache", `help${i}.jpg`);  
-        files.push(filePath);  
-        request(url).pipe(fs.createWriteStream(filePath)).on("close", () => {  
-            completed++;  
-            if (completed === helpImages.length) callback(files);  
-        });  
-    });
+function downloadImages(callback) {
+    const randomUrl = helpImages[Math.floor(Math.random() * helpImages.length)];
+    const filePath = path.join(__dirname, "cache", "help_random.jpg");
+
+    request(randomUrl)
+        .pipe(fs.createWriteStream(filePath))
+        .on("close", () => callback([filePath]));
 }
 
 module.exports.handleEvent = function ({ api, event, getText }) {
