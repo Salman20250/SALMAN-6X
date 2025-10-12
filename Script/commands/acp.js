@@ -2,7 +2,7 @@ module.exports.config = {
   name: "acp",
   version: "1.0.0",
   hasPermssion: 2,
-  credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+  credits: "SALMAN AHMED",
   description: "Make friends via Facebook id",
   commandCategory: "bot id",
   usages: "uid",
@@ -40,7 +40,7 @@ module.exports.handleReply = async ({ handleReply, event, api }) => {
     form.fb_api_req_friendly_name = "FriendingCometFriendRequestDeleteMutation";
     form.doc_id = "4108254489275063";
   }
-  else return api.sendMessage("Please choose <add | del > <numerical order | or \"all\">", event.threadID, event.messageID);
+  else return api.sendMessage("ᴘʟᴇᴀsᴇ ᴄʜᴏᴏsᴇ >ᴀᴅᴅ | ᴅᴇʟ > <ɴᴜᴍᴇʀɪᴄᴀʟ ᴏʀᴅᴇʀ | ᴏʀ \"ᴀʟʟ\">", event.threadID, event.messageID);
   let targetIDs = args.slice(1);
   
   if (args[1] == "all") {
