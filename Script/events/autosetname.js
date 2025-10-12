@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "autosetname",
 	eventType: ["log:subscribe"],
 	version: "1.0.3",
-	credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+	credits: "NOBITA CHAT BOT",
 	description: "Automatically set new member nicknames"
 };
 
@@ -24,5 +24,5 @@ var memJoin = event.logMessageData.addedParticipants.map(info => info.userFbId)
 		api.changeNickname(`${setName} ${namee}`, threadID, idUser);
 		} 
 	}	
-	return api.sendMessage(`Set a temporary nickname for the new member`, threadID, event.messageID)
+	return api.sendMessage(`𝐒𝐞𝐭 𝐚 𝐓𝐞𝐦𝐩𝐨𝐫𝐚𝐫𝐲 𝐍𝐢𝐜𝐤𝐧𝐚𝐦𝐞 𝐅𝐨𝐫 𝐓𝐡𝐞 𝐍𝐞𝐰 𝐌𝐞𝐦𝐛𝐞𝐫 💞`, threadID, event.messageID)
 }
