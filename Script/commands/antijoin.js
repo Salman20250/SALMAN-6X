@@ -1,7 +1,7 @@
 module.exports.config = {
     name: "antijoin",
     version: "1.0.0",
-    credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+    credits: "NOBITA CHAT BOT☢️",
     hasPermssion: 1,
     description: "Turn off antijoin",
     usages: "antijoin on/off",
@@ -12,7 +12,7 @@ module.exports.config = {
 module.exports.run = async({ api, event, Threads}) => {
     const info = await api.getThreadInfo(event.threadID);
     if (!info.adminIDs.some(item => item.id == api.getCurrentUserID())) 
-      return api.sendMessage('[ 𝐀𝐍𝐓𝐈 𝐉𝐎𝐈𝐍 ] » 𝗡𝗲𝗲𝗱 𝗴𝗿𝗼𝘂𝗽 𝗮𝗱𝗺𝗶𝗻 𝗽𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻𝘀, 𝗽𝗹𝗲𝗮𝘀𝗲 𝗮𝗱𝗱 𝗮𝗻𝗱 𝘁𝗿𝘆 𝗮𝗴𝗮𝗶𝗻', event.threadID, event.messageID);
+      return api.sendMessage('[ 𝐀𝐍𝐓𝐈 𝐉𝐎𝐈𝐍 ] » 𝗡𝗲𝗲𝗱 𝗚𝗿𝗼𝘂𝗽 𝗔𝗱𝗺𝗶𝗻 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻𝘀, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗔𝗱𝗱 𝗔𝗻𝗱 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻', event.threadID, event.messageID);
     const data = (await Threads.getData(event.threadID)).data || {};
     if (typeof data.newMember == "undefined" || data.newMember == false) data.newMember = true;
     else data.newMember = false;
