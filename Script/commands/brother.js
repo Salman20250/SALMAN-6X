@@ -1,8 +1,8 @@
 module.exports.config = {
- name: "bro",
+ name: "brother",
  version: "7.3.1",
  hasPermssion: 0,
- credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+ credits: "NOBITA CHAT BOT",
  description: "Get Pair From Mention",
  commandCategory: "png",
  usages: "[@mention]",
