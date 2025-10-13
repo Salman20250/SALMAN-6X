@@ -32,7 +32,7 @@ ${allCommands.map(cmd => `║ ➔ ${cmd}`).join("\n")}
 ║ 👤─꯭𝐍𝐎𝐁𝐈𝐓𝐀 𝐑𝐎𝐁𝐎𝐓 🤖
 ║ 👑 𝐎𝐖𝐍𝐄𝐑 : 𝐍𝐎𝐁𝐈𝐓𝐀 💞
 ║ 📦 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 : ${allCommands.length} 
-╚═════════════════╝`;
+╚════════════════╝`;
 
  
  const backgrounds = [
