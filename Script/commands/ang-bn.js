@@ -2,7 +2,7 @@ module.exports.config = {
   name: "bn",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "Islamick Cyber Chat",
+  credits: "NOBITA CHAT BOT",
   usePrefix: false,
   description: "Text translation",
   commandCategory: "media",
