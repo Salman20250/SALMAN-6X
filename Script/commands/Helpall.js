@@ -5,7 +5,7 @@ module.exports.config = {
  name: "helpall",
  version: "1.0.0",
  hasPermssion: 0,
- credits: "𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐒𝐀𝐇𝐔",
+ credits: "NOBITA CHAT BOT",
  description: "Displays all available commands in one page",
  commandCategory: "system",
  usages: "[No args]",
@@ -29,9 +29,9 @@ module.exports.run = async function ({ api, event }) {
  const finalText = `╔═══❖ 🌟 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐋𝐈𝐒𝐓 🌟 ❖═══╗
 ${allCommands.map(cmd => `║ ➔ ${cmd}`).join("\n")}
 ╠═════🔰 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 🔰═════╣
-║ 🤖 𝐁𝐨𝐭: ─꯭─⃝‌‌𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭
-║ 👑 𝐎𝐰𝐧𝐞𝐫: 𝐒𝐇𝐀𝐇𝐀𝐃𝐀𝐓 𝐒𝐀𝐇𝐔
-║ 📦 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: ${allCommands.length} 
+║ 🤖 𝐁𝐎𝐓 :  ─꯭𝐍𝐎𝐁𝐈𝐓𝐀 𝐑𝐎𝐁𝐎𝐓 🤖😻
+║ 👑 𝐎𝐖𝐍𝐄𝐑 : 𝐍𝐎𝐁𝐈𝐓𝐀 𝐊𝐈𝐍𝐆 💞
+║ 📦 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 : ${allCommands.length} 
 ╚═══════════════════════╝`;
 
  
