@@ -2,7 +2,7 @@ module.exports.config = {
   name: "boxadmin",
   version: "1.0.0",
   hasPermssion: 2,
-  credits: "SHAHADAT SAHU",
+  credits: "ɴᴏʙɪᴛᴀ ᴄʜᴀᴛ ʙᴏᴛ",
   description: "Add/remove admin via me, mention, or reply",
   commandCategory: "system",
   usages: "boxadmin me | boxadmin add/remove @mention | reply",
@@ -24,7 +24,7 @@ module.exports.run = async function({ api, event, args }) {
     if (action === "me") action = "add";
 
     if (!["add", "remove"].includes(action)) 
-      return api.sendMessage("🌸 Usage : boxadmin me | boxadmin add/remove @mention | reply", threadID, event.messageID);
+      return api.sendMessage("🌸 ᴜsᴀɢᴇ : ʙᴏxᴀᴅᴍɪɴ ᴍᴇ | ʙᴏxᴀᴅᴍɪɴ ᴀᴅᴅ/ʀᴇᴍᴏᴠᴇ @ᴍᴇɴᴛɪᴏɴ | ʀᴇᴘʟʏ", threadID, event.messageID);
 
     let uid;
     let targetName;
@@ -38,7 +38,7 @@ module.exports.run = async function({ api, event, args }) {
     } else if (args[1]?.toLowerCase() === "me") {
       uid = event.senderID;
     } else {
-      return api.sendMessage("🌸 Usage : boxadmin me | boxadmin add/remove @mention | reply", threadID, event.messageID);
+      return api.sendMessage("🌸 🌸 ᴜsᴀɢᴇ : ʙᴏxᴀᴅᴍɪɴ ᴍᴇ | ʙᴏxᴀᴅᴍɪɴ ᴀᴅᴅ/ʀᴇᴍᴏᴠᴇ @ᴍᴇɴᴛɪᴏɴ | ʀᴇᴘʟʏ", threadID, event.messageID);
     }
 
     const userInfo = await api.getUserInfo([uid, event.senderID]);
