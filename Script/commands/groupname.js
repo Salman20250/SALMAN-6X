@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "groupname",
 	version: "1.0.0", 
 	hasPermssion: 0,
-	credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+	credits: "NOBITA CHAT BOT",
 	description: "Rename your group",
 	commandCategory: "Box", 
 	usages: "groupname [name]", 
@@ -12,6 +12,6 @@ module.exports.config = {
 
 module.exports.run = async function({ api, event, args }) {
 	var name = args.join(" ")
-	if (!name) api.sendMessage("❌ You have not entered the group name you want to change", event.threadID, event.messageID)
-	else api.setTitle(name, event.threadID, () => api.sendMessage(`🔨 The bot changed the group name to: ${name}`, event.threadID, event.messageID));
+	if (!name) api.sendMessage("𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐍𝐨𝐭 𝐄𝐧𝐭𝐞𝐫𝐞𝐝 𝐓𝐡𝐞 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐂𝐡𝐚𝐧𝐠𝐞💥", event.threadID, event.messageID)
+	else api.setTitle(name, event.threadID, () => api.sendMessage(`🔨 𝐓𝐡𝐞 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐠𝐞𝐝 𝐓𝐡𝐞 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞 𝐓𝐨 : ${name}`, event.threadID, event.messageID));
 }
