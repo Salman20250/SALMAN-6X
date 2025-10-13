@@ -34,7 +34,8 @@ module.exports.run = async function ({ api, event, args, Users, Threads }) {
 
  const msg = `╭⭓ ⪩ 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 ⪨
 │
-├─ 🤖 𝗕𝗢𝗧 𝗡𝗔𝗠𝗘 : ─꯭─⃝‌‌𝐍𝐎𝐁𝐈𝐓𝐀 𝐂𝐇𝐀𝐓 𝐁𝐎𝐓
+├─ 🤖 𝗕𝗢𝗧 𝗡𝗔𝗠𝗘 :
+├ ─꯭─⃝‌‌𝐍𝐎𝐁𝐈𝐓𝐀 𝐂𝐇𝐀𝐓 𝐁𝐎𝐓
 ├─ ☢️ 𝗣𝗥𝗘𝗙𝗜𝗫 : ${config.PREFIX}
 ├─ ♻️ 𝗣𝗥𝗘𝗙𝗜𝗫 𝗕𝗢𝗫 : ${prefix}
 ├─ 🔶 𝗠𝗢𝗗𝗨𝗟𝗘𝗦 : ${commands.size}
@@ -44,30 +45,30 @@ module.exports.run = async function ({ api, event, args, Users, Threads }) {
 
 ╭⭓ ⪩ 𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢 ⪨
 │
-├─ 👑 𝗡𝗔𝗠𝗘 : 𝐒𝐀𝐋𝐌𝐀𝐍 𝐀𝐇𝐌𝐄𝐃
+├─ 👑 𝗡𝗔𝗠𝗘 : 𝐍𝐎𝐁𝐈𝐓𝐀 💫
 ├─ 📲 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 :
-│ ✔︎ facebook.com/DEATH.USER1
+│ ✔︎ fb.com/DEATH.USER1
 ├─ 💌 𝗠𝗘𝗦𝗦𝗘𝗡𝗚𝗘𝗥 :
-│ ✔︎ https://m.me/DEATH.USER1
+│ ✔︎ m.me/DEATH.USER1
 ├─ 📞 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 :
-│ ✔︎ wa.me/+8801941010189
+│ ✔︎ wa.me/01941010189
 │
 ╰───────⭓
 
 ╭⭓ ⪩ 𝗔𝗖𝗧𝗜𝗩𝗜𝗧𝗜𝗘𝗦 ⪨
 │
-├─ ⏳ 𝗔𝗖𝗧𝗜𝗩𝗘 𝗧𝗜𝗠𝗘 : ${hours}h ${minutes}m ${seconds}s
+├─ ⏳ 𝗔𝗖𝗧𝗜𝗩𝗘 : ${hours}h ${minutes}m ${seconds}s
 ├─ 📣 𝗚𝗥𝗢𝗨𝗣𝗦 : ${totalThreads}
 ├─ 🧿 𝗧𝗢𝗧𝗔𝗟 𝗨𝗦𝗘𝗥𝗦 : ${totalUsers}
 ╰───────⭓
 
-     ❤️ 𝗧𝗛𝗔𝗡𝗞𝗦 𝗙𝗢𝗥 𝗨𝗦𝗜𝗡𝗚 𝗠𝗬 𝗕𝗢𝗧 🌺`;
+  ❤️ 𝗧𝗛𝗔𝗡𝗞𝗦 𝗙𝗢𝗥 𝗨𝗦𝗜𝗡𝗚 𝗠𝗬 𝗕𝗢𝗧 🌺`;
 
  const imgLinks = [
- "https://i.imgur.com/XfY3Ggk.jpeg",
- "https://i.imgur.com/XfY3Ggk.jpeg",
- "https://i.imgur.com/XfY3Ggk.jpeg",
- "https://i.imgur.com/XfY3Ggk.jpeg"
+ "https://i.imgur.com/2FF89HM.jpeg",
+ "https://i.imgur.com/2qvGbLE.jpeg",
+ "https://i.imgur.com/5ZQtUOf.jpeg",
+ "https://i.imgur.com/9vGgJmw.jpeg"
  ];
 
  const imgLink = imgLinks[Math.floor(Math.random() * imgLinks.length)];
