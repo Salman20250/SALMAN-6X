@@ -26,11 +26,11 @@ module.exports.run = async function ({ api, event }) {
 
  allCommands.sort();
 
- const finalText = `╔═══❖ 🌟 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐋𝐈𝐒𝐓 🌟 ❖═══╗
+ const finalText = `╔═🔥𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐋𝐈𝐒𝐓🔥═╗
 ${allCommands.map(cmd => `║ ➔ ${cmd}`).join("\n")}
-╠═════🔰 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 🔰═════╣
-║ 🤖 𝐁𝐎𝐓 :  ─꯭𝐍𝐎𝐁𝐈𝐓𝐀 𝐑𝐎𝐁𝐎𝐓 🤖😻
-║ 👑 𝐎𝐖𝐍𝐄𝐑 : 𝐍𝐎𝐁𝐈𝐓𝐀 𝐊𝐈𝐍𝐆 💞
+╠════ 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 ════╣
+║ 👤─꯭𝐍𝐎𝐁𝐈𝐓𝐀 𝐑𝐎𝐁𝐎𝐓 🤖😻
+║ 👑 𝐎𝐖𝐍𝐄𝐑 : 𝐍𝐎𝐁𝐈𝐓𝐀 💞
 ║ 📦 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 : ${allCommands.length} 
 ╚═══════════════════════╝`;
 
