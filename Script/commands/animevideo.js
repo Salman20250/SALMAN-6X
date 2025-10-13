@@ -2,7 +2,7 @@ module.exports.config = {
  name: "anime",
  version: "1.0.0",
  hasPermssion: 0,
- credits: "Shaon Ahmed",
+ credits: "NOBITA CHAT BOT",
  description: "ANIME VIDEO",
  commandCategory: "group",
  usages: "anime video",
