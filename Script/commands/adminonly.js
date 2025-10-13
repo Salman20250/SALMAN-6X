@@ -2,7 +2,7 @@ module.exports.config = {
  name: "onlyadmin",
  version: "1.0",
  hasPermssion: 2,
- credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+ credits: "NOBITA CHAT BOT",
  description: "Admin only",
  commandCategory: "Admin",
  usages: "qtvonly",
@@ -36,9 +36,9 @@ const { threadID, messageID, mentions } = event;
  const { adminbox } = database; 
  if (adminbox[threadID] == true) {
  adminbox[threadID] = false;
- api.sendMessage("» Successfully disabled admin and only mode (everyone can use bots)", threadID, messageID);
+ api.sendMessage("» sᴜᴄᴄᴇsғᴜʟʟʏ ᴅɪsᴀʙʟᴇᴅ ᴀᴅᴍɪɴ ᴀɴᴅ ᴏɴʟʏ ᴍᴏᴅᴇ ( ᴇᴠᴇʀʏᴏɴᴇ ᴄᴀɴ ᴜsᴇ ʙᴏᴛs )", threadID, messageID);
  } else {
  adminbox[threadID] = true;
- api.sendMessage("» Successfully enabled admin only mode (only admin with admin of group can use bot)", threadID, messageID);
+ api.sendMessage("» sᴜᴄᴄᴇsғᴜʟʟʏ ᴇɴᴀʙʟᴇᴅ ᴀᴅᴍɪɴ ᴏɴʟʏ ᴍᴏᴅᴇ ( ᴏɴʟʏ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴀᴅᴍɪɴ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ ᴄᴀɴ ᴜsᴇ ʙᴏᴛ )", threadID, messageID);
  }
 }
