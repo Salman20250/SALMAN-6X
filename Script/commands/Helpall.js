@@ -26,20 +26,18 @@ module.exports.run = async function ({ api, event }) {
 
  allCommands.sort();
 
- const finalText = `╔═🔥𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐋𝐈𝐒𝐓🔥═╗
+ const finalText = `╔🔥𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐋𝐈𝐒𝐓🔥╗
 ${allCommands.map(cmd => `║ ➔ ${cmd}`).join("\n")}
 ╠════ 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 ════╣
-║ 👤─꯭𝐍𝐎𝐁𝐈𝐓𝐀 𝐑𝐎𝐁𝐎𝐓 🤖😻
+║ 👤─꯭𝐍𝐎𝐁𝐈𝐓𝐀 𝐑𝐎𝐁𝐎𝐓 🤖
 ║ 👑 𝐎𝐖𝐍𝐄𝐑 : 𝐍𝐎𝐁𝐈𝐓𝐀 💞
 ║ 📦 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 : ${allCommands.length} 
-╚═══════════════════════╝`;
+╚═════════════════╝`;
 
  
  const backgrounds = [
- "https://i.imgur.com/wu0iDqS.jpeg",
- "https://i.imgur.com/zqsuJnX.jpeg",
- "https://i.imgur.com/Huz3nAE.png",
- "https://i.imgur.com/wu0iDqS.jpeg"
+ "https://i.imgur.com/GWVwP4k.jpeg",
+ "https://i.imgur.com/HLfv6g4.jpeg"
  ];
  const selectedBg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
  const imgPath = __dirname + "/cache/helpallbg.jpg";
