@@ -2,7 +2,7 @@ module.exports.config = {
  name: "art",
  version: "1.0.0",
  hasPermssion: 0,
- credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+ credits: "NOBITA CHAT BOT",
  description: "Apply AI art style (anime)",
  commandCategory: "editing",
  usages: "reply to an image",
@@ -18,7 +18,7 @@ module.exports.run = async ({ api, event }) => {
  const { messageReply, threadID, messageID } = event;
 
  if (!messageReply || !messageReply.attachments || messageReply.attachments.length === 0) {
- return api.sendMessage("❌ অনুগ্রহ করে কোনো একটি ছবির রিপ্লাই দিন।", threadID, messageID);
+ return api.sendMessage("অনুগ্রহ করে কোনো একটি ছবির রিপ্লাই দিন..🌸", threadID, messageID);
  }
 
  const url = messageReply.attachments[0].url;
@@ -42,12 +42,12 @@ module.exports.run = async ({ api, event }) => {
  fs.writeFileSync(path, apiRes.data);
 
  api.sendMessage({
- body: "✅ AI artify করা হয়েছে!",
+ body: "AI Artify করা হয়েছে!❤️",
  attachment: fs.createReadStream(path)
  }, threadID, () => fs.unlinkSync(path), messageID);
 
  } catch (err) {
  console.error(err);
- api.sendMessage("❌ কিছু একটা ভুল হয়েছে। আবার চেষ্টা করুন।", threadID, messageID);
+ api.sendMessage("কিছু একটা ভুল হয়েছে। আবার চেষ্টা করুন।⚠️", threadID, messageID);
  }
 };
