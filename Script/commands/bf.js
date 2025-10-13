@@ -2,7 +2,7 @@ module.exports.config = {
  name: "bf",
  version: "7.3.1",
  hasPermssion: 0,
- credits: "SA HU", 
+ credits: "NOBITA CHAT BOT", 
  description: "Get Pair From Mention",
  commandCategory: "img",
  usages: "[@mention]",
@@ -67,7 +67,7 @@ module.exports.run = async function ({ event, api, args }) {
  const fs = global.nodemodule["fs-extra"];
  const { threadID, messageID, senderID } = event;
  const mention = Object.keys(event.mentions);
- if (!mention[0]) return api.sendMessage("Please mention 1 person.", threadID, messageID);
+ if (!mention[0]) return api.sendMessage("ᴘʟᴇᴀsᴇ ᴍᴇɴᴛɪᴏɴ 1 ᴘᴇʀsᴏɴ..💞", threadID, messageID);
  else {
  const one = senderID, two = mention[0];
  return makeImage({ one, two }).then(path => api.sendMessage({
@@ -75,7 +75,7 @@ module.exports.run = async function ({ event, api, args }) {
  " ভালোবাসার সেরা জুটি 💘\n" +
  "╚═════❖••° °••❖═════╝\n\n" +
  " ✶⊶⊷⊷⊷⊷❍⊶⊷⊷⊷⊷✶\n" +
- " 👑 এই নে! এখন থেকে শুধু তোরই ❤️\n" +
+ " 👑 এই নে এখন থেকে শুধু তোরই ❤️\n" +
  " 💌 তোর একমাত্র বয়ফ্রেন্ড হাজির 🩷\n" +
  " ✶⊶⊷⊷⊷⊷❍⊶⊷⊷⊷⊷✶",
  attachment: fs.createReadStream(path)
