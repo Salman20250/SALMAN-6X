@@ -146,7 +146,7 @@ module.exports.run = function ({ api, event, args, getText }) {
 ${msg}
 ┣━━━━━━━━━━━━━━━━┫
 ┃ ⚙  𝐏𝐑𝐄𝐅𝐈𝐗 : ${prefix}
-┃ 🤖 𝐁𝐎𝐓 𝐍𝐀𝐌𝐄 : ${global.config.BOTNAME || "𝐍𝐎𝐁𝐈𝐓𝐀 𝐂𝐇𝐀𝐓 𝐁𝐎𝐓"}
+┃ ${global.config.BOTNAME || "𝐍𝐎𝐁𝐈𝐓𝐀 𝐂𝐇𝐀𝐓 𝐁𝐎𝐓"}
 ┃ 👑 𝐀𝐃𝐌𝐈𝐍 : 𝐒𝐀𝐋𝐌𝐀𝐍 💛
 ╰━━━━━━━━━━━━━━━━╯`;
 
